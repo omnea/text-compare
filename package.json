@@ -6,7 +6,7 @@
   "scripts": {
     "test": "NODE_ENV=test ./node_modules/.bin/jasmine",
     "start": "nodejs .",
-    "postinstall": "ln -s ../lib node_modules/text-compare"
+    "postinstall": "mkdir -p node_modules && rm -f node_modules/text-compare && ln -s ../lib node_modules/text-compare"
   },
   "author": "Omnea GmbH",
   "license": "UNLICENSED",
