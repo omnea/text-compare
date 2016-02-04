@@ -1,10 +1,16 @@
+'use strict';
+
 var Compare = require('./lib/index.js');
 
-var distance = Compare.inLang('de_DE').company('Company name A', 'Company b');
+var time = Date.now();
 
-console.log(distance);
+var distance = Compare.inLang('de_DE').company('Company name A', 'Company A');
 
-distance = Compare.address({
+console.log(distance, Date.now() - time);
+
+time = Date.now();
+
+distance = Compare.inLang('en_GB').address({
 	street: "meyersbeerstrasse 113",
 	city: "Berlin",
 	zip: "13088",
@@ -16,4 +22,4 @@ distance = Compare.address({
 	country: "Germany"
 });
 
-console.log(distance);
+console.log(distance, Date.now() - time);
