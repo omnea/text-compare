@@ -4,7 +4,7 @@ var Compare = require('./lib/index.js');
 
 var time = Date.now();
 
-var distance = Compare.inLang('de_DE').company('Company name A', 'Company A');
+var distance = Compare.inLang('de_DE').company('Generali Versicherung AG', 'Generali Versicherung: Filialdirektion');
 
 console.log(distance, Date.now() - time);
 
