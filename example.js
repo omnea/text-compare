@@ -4,22 +4,36 @@ var Compare = require('./lib/index.js');
 
 var time = Date.now();
 
-var distance = Compare.inLang('de_DE').company('Generali Versicherung AG', 'Generali Versicherung: Filialdirektion');
+var compare = Compare.inLang('de_DE');
+
+console.log(distance, Date.now() - time);
+
+
+var time = Date.now();
+
+var distance = compare.company('Generali Versicherung AG', 'Generali Versicherung: Filialdirektion');
 
 console.log(distance, Date.now() - time);
 
 time = Date.now();
 
-distance = Compare.inLang('en_GB').address({
-	street: "meyersbeerstrasse 113",
+distance = compare.address({
+	street: "meyerbeerstr. 113",
 	city: "Berlin",
 	zip: "13088",
 	country: "Germany"
 },{
-	street: "meyersbeerstrasse 113",
+	street: "meyerbeerstrasse 113",
 	city: "Berlin",
 	zip: "13088",
 	country: "Germany"
 });
+
+console.log(distance, Date.now() - time);
+
+
+time = Date.now();
+
+var distance = compare.phone('(+49) 030.5770-432', '(+49) 030/5770/432(10)');
 
 console.log(distance, Date.now() - time);
