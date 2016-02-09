@@ -6,9 +6,6 @@ var time = Date.now();
 
 var compare = Compare.inLang('de_DE');
 
-console.log(distance, Date.now() - time);
-
-
 var time = Date.now();
 
 var distance = compare.company('Generali Versicherung AG', 'Generali Versicherung: Filialdirektion');
