@@ -4,7 +4,7 @@
   "description": "Compares several types of texts for getting their similitude",
   "main": "lib/index.js",
   "scripts": {
-    "test": "NODE_ENV=test ./node_modules/.bin/jasmine",
+    "test": "node tests/index.js",
     "start": "nodejs .",
     "postinstall": "mkdir -p node_modules && rm -f node_modules/text-compare && ln -s ../lib node_modules/text-compare"
   },
@@ -16,5 +16,8 @@
     "google-libphonenumber": "^1.0.12",
     "jasmine": "^2.4.1",
     "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "cli-table": "^0.3.1"
   }
 }
