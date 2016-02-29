@@ -15,7 +15,8 @@
     "glob": "^6.0.4",
     "google-libphonenumber": "^1.0.12",
     "jasmine": "^2.4.1",
-    "path": "^0.12.7"
+    "path": "^0.12.7",
+    "iconv": "https://github.com/DavidBM/node-iconv.git"
   },
   "devDependencies": {
     "cli-table": "^0.3.1",
