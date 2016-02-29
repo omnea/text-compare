@@ -1,5 +1,10 @@
 'use strict';
 
+var SegfaultHandler = require('segfault-handler');
+
+SegfaultHandler.registerHandler("crash.log");
+
+
 var Compare = require('./lib/index.js');
 
 var time = Date.now();
@@ -34,3 +39,4 @@ time = Date.now();
 var distance = compare.phone('(+49) 030.5770-432', '(+49) 030/5770/432(10)');
 
 console.log(distance, Date.now() - time);
+

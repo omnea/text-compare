@@ -18,6 +18,7 @@
     "path": "^0.12.7"
   },
   "devDependencies": {
-    "cli-table": "^0.3.1"
+    "cli-table": "^0.3.1",
+    "segfault-handler": "^1.0.0"
   }
 }
