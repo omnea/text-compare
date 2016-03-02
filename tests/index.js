@@ -19,7 +19,7 @@ Compare.exposeComparators();
 
 var companyFilteredNames = filterCompanyNames(companyNames);
 
-checkFalsePositives(Compare, companyNames, 500, 10);
+checkFalsePositives(Compare, companyNames, 500, 100);
 showLostLetters(companyFilteredNames, 100);
 showFilteredWordsStatistics(companyFilteredNames, 20);
 
