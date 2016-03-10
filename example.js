@@ -15,7 +15,7 @@ var time = Date.now();
 
 var distance = compare.company('Generali Versicherung AG', 'Generali Versicherung: Filialdirektion');
 
-console.log(distance, Date.now() - time);
+console.log('company: ', distance, Date.now() - time);
 
 time = Date.now();
 
@@ -31,12 +31,32 @@ distance = compare.address({
 	country: "Germany"
 });
 
-console.log(distance, Date.now() - time);
+console.log('address: ', distance, Date.now() - time);
 
 
 time = Date.now();
 
 var distance = compare.phone('(+49) 030.5770-432', '(+49) 030/5770/432(10)');
 
-console.log(distance, Date.now() - time);
+console.log('phone: ', distance, Date.now() - time);
 
+
+time = Date.now();
+
+var distance = compare.city('New York', 'York');
+
+console.log('city: ', distance, Date.now() - time);
+
+
+time = Date.now();
+
+var distance = compare.zip(12472, '12472');
+
+console.log('zip: ', distance, Date.now() - time);
+
+
+time = Date.now();
+
+var distance = compare.geolocation(53, 43, 52.0001, 43.0001, 112000);
+
+console.log('geolocation: ', distance, Date.now() - time);
