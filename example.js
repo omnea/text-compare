@@ -60,3 +60,10 @@ time = Date.now();
 var distance = compare.geolocation(53, 43, 52.0001, 43.0001, 112000);
 
 console.log('geolocation: ', distance, Date.now() - time);
+
+
+time = Date.now();
+
+var distance = compare.street('Monbijouplatz 5', 'Monbijoustrasse 5');
+
+console.log('geolocation: ', distance, Date.now() - time);
