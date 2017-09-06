@@ -13,9 +13,27 @@ var compare = Compare.inLang('de_DE');
 
 var time = Date.now();
 
-var distance = compare.company('Generali Versicherung AG', 'Generali Versicherung: Filialdirektion');
+var distance = compare.company('Generali Versicherung AG', 'Generali Versicherung');
 
 console.log('company: ', distance, Date.now() - time);
+
+var time = Date.now();
+
+var distance = compare.company('Generali Versicherung Zuenhöpenlaugen', 'Generali Versicherung');
+
+console.log('company different length: ', distance, Date.now() - time);
+
+time = Date.now();
+
+var distance = compare.company('Generali Versicherung GmbH', 'Generali Versicherung Gbh');
+
+console.log('company GmbH: ', distance, Date.now() - time);
+
+time = Date.now();
+
+var distance = compare.company('Generali Versicherung', 'Versicherung Generali');
+
+console.log('company order: ', distance, Date.now() - time);
 
 time = Date.now();
 
@@ -66,4 +84,4 @@ time = Date.now();
 
 var distance = compare.street('Monbijouplatz 5', 'Monbijoustrasse 5');
 
-console.log('geolocation: ', distance, Date.now() - time);
+console.log('street: ', distance, Date.now() - time);
