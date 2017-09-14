@@ -19,6 +19,12 @@ console.log('company: ', distance, Date.now() - time);
 
 var time = Date.now();
 
+var distance = compare.company('Generali-Versicherung GmbH', 'Generali-Versicherung GmbH    ');
+
+console.log('company space last: ', distance, Date.now() - time);
+
+var time = Date.now();
+
 var distance = compare.company('Generali Versicherung Zuenhöpenlaugen', 'Generali Versicherung');
 
 console.log('company different length: ', distance, Date.now() - time);
