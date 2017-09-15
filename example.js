@@ -57,6 +57,12 @@ distance = compare.address({
 
 console.log('address: ', distance, Date.now() - time);
 
+time = Date.now();
+
+distance = compare.street("meyerbeerstrasse 113 ","meyerbeerstrasse 113");
+
+console.log('street space last: ', distance, Date.now() - time);
+
 
 time = Date.now();
 
