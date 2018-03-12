@@ -5,7 +5,7 @@
   "main": "lib/index.js",
   "scripts": {
     "test": "node tests/index.js",
-    "start": "nodejs .",
+    "start": "node example.js",
     "postinstall": "mkdir -p node_modules && rm -f node_modules/text-compare && ln -s ../lib node_modules/text-compare"
   },
   "author": "Omnea GmbH",

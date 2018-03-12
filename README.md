@@ -38,7 +38,7 @@ npm install git@gitlab.com:omnea/text-compare.git
 ### Street
 
 ``` javascript
-var Compare = require('compare');
+var Compare = require('text-compare');
 
 var stringA = 'Company name A';
 var stringB = 'company b';
@@ -52,7 +52,7 @@ var similitude = compare.inLang('de_DE').street(stringA, stringB);
 ### Address
 
 ``` javascript
-var Compare = require('compare');
+var Compare = require('text-compare');
 
 var similar = Compare.address({
     street: "meyersbeerstrasse 113",
